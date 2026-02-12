@@ -2,6 +2,11 @@ const noBtn = document.querySelector(".no");
 const yesBtn = document.querySelector(".yes");
 
 let size = 20;
+const music = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    music.play();
+}, { once: true });
 
 // No button escape
 noBtn.addEventListener("mouseover", () => {
